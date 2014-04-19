@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pizza Boy - Contact Us</title>
+
+		<link rel="shortcut icon" href="images/logos/pizza.jpg"> 
+		<link rel="apple-itouch-icon" href="images/logos/pizza.jpg">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
+
+		<script src="js/jquery.1.10.2.js" type="text/javascript"></script>
+
+		<script>
+
+			$(document).ready(function(){
+			 	$(".menuIcon").click(function(){
+					$("nav").slideToggle();
+				});
+			});
+
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div class="logo"></div>
+			<h1>Pizza Boy</h1>
+			<div class="menuIcon"><img src="images/menu.svg"></div>
+			<nav>
+				<ul>
+					<li><a href="index.html"><h2>Home</h2></a></li>
+					<li><a href="menu.html"><h2>Menu</h2></a></li>
+					<li><a href="contactUs.html"><h2>Contact Us</h2></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="contact">
+	      	<div class="container">
+		        <h2>Questions? Comments? Concerns?</h2>
+		        <h3>Contact Us!</h3>
+
+		        <form>
+			        <div class="formSection">
+			          	<label>
+			            	<div class="labelappend">Name</div>
+			            	<input type="text">
+			          	</label>
+			          	<label>
+			            	<div class="labelappend">Email</div>
+			            	<input type="email">
+			          	</label>
+			          	<label>
+			            	<div class="labelappend">Phone</div>
+			            	<input type="text">
+			          	</label>
+			          	<label>
+			            	<div class="labelappend">City</div>
+			            	<input type="text">
+			          	</label>
+			          	<label>
+			            	<div class="labelappend">Province</div>
+			            	<select>
+			            		<option>Alberta</option>
+								<option>British Columbia</option>
+								<option>Manitoba</option>
+								<option>New Brunswick</option>
+								<option>Newfoundland and Labrador</option>
+								<option>Nova Scotia</option>
+								<option>Northwest Territories</option>
+								<option>Nunavut</option>
+								<option>Ontario</option>
+								<option>Prince Edward Island</option>
+								<option>Quebec</option>
+								<option>Saskatchewan</option>
+								<option>Yukon</option>
+			            	</select>
+			          	</label>
+			        </div>
+			        <div class="formSection">
+			          	<label>
+			            	<div class="labelappend">Comments</div>
+			            	<textarea></textarea>
+			          	</label>
+			         	<input type="submit">
+		         	</div>
+		        </form>
+
+		    </div>
+  		</section>
+
+		<footer>
+			<div class="container">
+			<p>©2013 Pizza Boy Enterprises</p>
+				<ul>
+					<li><a href="#"><div class="facebook"></div></a></li>
+					<li><a href="#"><div class="twitter"></div></a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

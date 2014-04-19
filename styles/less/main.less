@@ -1,0 +1,233 @@
+@import 'includes/brand.less';
+@import 'includes/typography.less';
+@import 'includes/mixins.less';
+
+/* Global Styles */
+
+* {
+  .box-sizing;
+}
+
+body {
+  background-color: @dark;
+  font-family: @bodyfont;
+  font-size: 1em;
+  color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Header */
+
+header {
+	text-align: center;
+	padding: 10px 0;
+	.logo {
+		width: 300px;
+		height: 180px;
+		background-image: url("../images/logos/pizza.svg");
+		margin: 0 auto;
+	}
+	.menuIcon{
+		margin: 20px auto 0;
+		display: none;
+	}
+	nav {
+		margin-top: 50px;
+		ul li {
+			display: inline-block;
+			padding: 0 5%;
+		}
+	}
+
+}
+
+/* Home Page */
+
+/* Hero Section */
+
+section#hero {
+	width: 100%;
+	background-image: url("../images/heroPizza.jpg");
+	background-size: cover;
+ 	background-position: center;
+ 	padding: 300px 50px 50px 50px;
+ 	text-align: center;
+ 	h3 {
+ 		.border-radius(10px);
+ 		padding: 10px;
+ 		background-color: rgba(0, 0, 0, 0.7);
+ 	}
+}
+
+/* Features Section */
+
+section#features {
+	overflow: hidden;
+	padding: 50px 0;
+	background-color: @orange;
+	div.feature {
+		.widthfloat(45%);
+		img {
+			width: 100%;
+			.border-radius(10px);
+		}
+	}
+}
+
+/* Footer */
+
+footer {
+	height: 40px;
+	padding: 5px 10px;
+	p{
+		float: left;
+	}
+	ul {
+		float: right;
+			li {
+			display: inline-block;
+			div.facebook{
+				height: 30px;
+				width: 30px;
+				background-image: url("../images/facebook.svg");
+			}
+			div.twitter{
+				height: 30px;
+				width: 30px;
+				background-image: url("../images/twitter.svg");
+			}
+		}
+	}
+}
+
+/* Menu Page */
+
+section#foodMenu {
+	background-color: @orange;
+	padding-top: 50px;
+	.menuGroup {
+		.widthfloat(45%);
+		margin-bottom: 50px;
+		img {
+			.border-radius;
+			max-width: 100%;
+		}
+		h3 {
+			padding: 5px 0;
+		}
+		ul li {
+			margin-top: 10px;
+			border-bottom: 1px dotted #fff;
+			float: left;
+			width: 100%;
+			p {
+				text-align: left;
+				float: left;
+				&:last-child {
+					float: right;
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+
+/* Contact Us Page */
+
+section#contact {
+	background-color: @orange;
+	padding: 25px 0;
+	h3 {
+		padding: 25px 0;
+	}
+	.formSection {
+		.widthfloat(45%);
+		label {
+			display: block;
+			padding: 10px;
+			width: 100%;
+			.labelappend {
+				background-color: @dark;
+				width: 100px;
+				height: 25px;
+				padding: 5px;
+			}
+			input {
+				.formstyling;
+			}
+			select {
+				.formstyling;
+			}
+			textarea {
+				.formstyling(200px);
+			}
+		}
+		input[type="submit"] {
+			background-color: @dark;
+			width: 50%;
+			color: #fff;
+			border: none;
+			height: 50px;
+			font-size: 1.5em;
+		}
+	}
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) and (min-width: 320px) { 
+
+	header {
+		.menuIcon {
+			display: block;
+		}
+		nav {
+			display: none;
+			margin-top: 20px;
+			ul {
+				li {
+					display: block;
+					padding: 2% 0;
+				}
+			}
+		}
+
+	}
+
+	section#hero {
+		padding: 0px;
+		h3 {
+			.border-radius(0);
+		}
+	}
+
+	section#features {
+		div.feature {
+			.removeWidthfloat;
+			&:first-child{
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+	section#foodMenu {
+		.menuGroup {
+			.removeWidthfloat;
+			img {
+				display: none;
+			}
+		}
+	}
+
+	section#contact {
+		.formSection {
+			.removeWidthfloat;
+		}
+	}
+}

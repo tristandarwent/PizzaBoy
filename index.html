@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pizza Boy</title>
+
+		<link rel="shortcut icon" href="images/logos/pizza.jpg"> 
+		<link rel="apple-itouch-icon" href="images/logos/pizza.jpg">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
+
+		<script src="js/jquery.1.10.2.js" type="text/javascript"></script>
+
+		<script>
+
+		    $(document).ready(function(){
+		      $(".menuIcon").click(function(){
+		        $("nav").slideToggle();
+		      });
+		    });
+
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div class="logo"></div>
+			<h1>Pizza Boy</h1>
+			<div class="menuIcon"><img src="images/menu.svg"></div>
+			<nav>
+				<ul>
+					<li><a href="index.html"><h2>Home</h2></a></li>
+					<li><a href="menu.html"><h2>Menu</h2></a></li>
+					<li><a href="contactUs.html"><h2>Contact Us</h2></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="hero">
+			<div class="container">
+				<h3>The most delicious pizza in town. With handmade dough and fresh toppings, you owe it to yourself to try Pizza Boy!</h3>
+			</div>
+		</section>
+
+		<section id="features">
+			<div class="container">
+				<div class="feature">
+					<img src="images/feature1.jpg">
+					<h4>New BBQ Chicken Pizza!</h4>
+				</div>	
+				<div class="feature">
+					<img src="images/feature2.jpg">
+					<h4>Catering now available!</h4>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+			<p>©2013 Pizza Boy Enterprises</p>
+				<ul>
+					<li><a href="#"><div class="facebook"></div></a></li>
+					<li><a href="#"><div class="twitter"></div></a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

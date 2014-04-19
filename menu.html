@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pizza Boy - Menu</title>
+
+		<link rel="shortcut icon" href="images/logos/pizza.jpg"> 
+		<link rel="apple-itouch-icon" href="images/logos/pizza.jpg">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
+
+		<script src="js/jquery.1.10.2.js" type="text/javascript"></script>
+
+		<script>
+
+			$(document).ready(function(){
+			 	$(".menuIcon").click(function(){
+					$("nav").slideToggle();
+				});
+			});
+
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div class="logo"></div>
+			<h1>Pizza Boy</h1>
+			<div class="menuIcon"><img src="images/menu.svg"></div>
+			<nav>
+				<ul>
+					<li><a href="index.html"><h2>Home</h2></a></li>
+					<li><a href="menu.html"><h2>Menu</h2></a></li>
+					<li><a href="contactUs.html"><h2>Contact Us</h2></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="foodMenu">
+			<div class="container">
+				<div class="menuGroup">
+					<img src="images/tPizzas.jpg">
+					<h3>Traditional Pizzas</h3>
+					<ul>
+						<li><p>Pepperoni</p><p>$7.99</p></li>
+						<li><p>Canadian</p><p>$8.99</p></li>
+						<li><p>Supreme</p><p>$9.99</p></li>
+						<li><p>Hawaiian</p><p>$8.99</p></li>
+						<li><p>Veggie</p><p>$9.99</p></li>
+					</ul>
+				</div>
+				<div class="menuGroup">
+					<img src="images/sPizzas.jpg">
+					<h3>Specialty Pizzas</h3>
+					<ul>
+						<li><p>BBQ Chicken</p><p>$11.99</p></li>
+						<li><p>Meat Supreme</p><p>$12.99</p></li>
+						<li><p>Sweet Chili Thai</p><p>$11.99</p></li>
+						<li><p>Chicken Bruchetta</p><p>$10.99</p></li>
+						<li><p>Philly Cheese Steak</p><p>$12.99</p></li>
+					</ul>
+				</div>
+				<div class="menuGroup">
+					<img src="images/sides.jpg">
+					<h3>Sides</h3>
+					<ul>
+						<li><p>Wedges</p><p>$3.49</p></li>
+						<li><p>Onion Rings</p><p>$3.50</p></li>
+						<li><p>Chicken Strips</p><p>$3.99</p></li>
+						<li><p>Chicken Wings</p><p>$5.49</p></li>
+						<li><p>Brownies</p><p>$1.99</p></li>
+					</ul>
+				</div>
+				<div class="menuGroup">
+					<img src="images/drinks.jpg">
+					<h3>Drinks</h3>
+					<ul>
+						<li><p>Water</p><p>$1.49</p></li>
+						<li><p>Cola</p><p>$1.99</p></li>
+						<li><p>Ginger Ale</p><p>$1.99</p></li>
+						<li><p>Root Beer</p><p>$1.99</p></li>
+						<li><p>Iced Tea</p><p>$1.99</p></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+			<p>©2013 Pizza Boy Enterprises</p>
+				<ul>
+					<li><a href="#"><div class="facebook"></div></a></li>
+					<li><a href="#"><div class="twitter"></div></a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
